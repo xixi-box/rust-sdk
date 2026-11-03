@@ -7,6 +7,32 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [3.9.0](https://github.com/modelcontextprotocol/rust-sdk/compare/rmcp-v3.8.0...rmcp-v3.9.0) - 2026-11-03
+
+### Added
+
+- *(auth)* structure protected resource discovery errors ([#1305](https://github.com/modelcontextprotocol/rust-sdk/pull/1305))
+- *(transport)* log followed same-origin redirects at debug level ([#1417](https://github.com/modelcontextprotocol/rust-sdk/pull/1417))
+- support the Skills extension (SEP-2640) ([#1392](https://github.com/modelcontextprotocol/rust-sdk/pull/1392))
+
+### Fixed
+
+- *(skills)* enforce manifest boundaries and capability negotiation ([#1412](https://github.com/modelcontextprotocol/rust-sdk/pull/1412))
+- *(transport)* send SIGTERM before killing a child process on graceful shutdown ([#1379](https://github.com/modelcontextprotocol/rust-sdk/pull/1379))
+- *(handler)* generate a tool's outputSchema for the serialize contract ([#1378](https://github.com/modelcontextprotocol/rust-sdk/pull/1378))
+- *(server)* reject server-to-client requests on discover sessions ([#1397](https://github.com/modelcontextprotocol/rust-sdk/pull/1397))
+- *(auth)* accept ID-JAGs without a resource claim ([#1406](https://github.com/modelcontextprotocol/rust-sdk/pull/1406))
+- *(rmcp)* reject Mcp-Param headers with invalid characters ([#1414](https://github.com/modelcontextprotocol/rust-sdk/pull/1414))
+- *(transport)* match explicit HTTP media types and Accept quality values ([#1382](https://github.com/modelcontextprotocol/rust-sdk/pull/1382))
+- *(model)* accept URL elicitation requests without elicitationId ([#1383](https://github.com/modelcontextprotocol/rust-sdk/pull/1383))
+- *(transport)* preserve protocol error replies across cancellation ([#1370](https://github.com/modelcontextprotocol/rust-sdk/pull/1370))
+
+### Other
+
+- *(deps)* update rstest requirement from 0.27.0 to 0.28.0 ([#1422](https://github.com/modelcontextprotocol/rust-sdk/pull/1422))
+- *(client)* point on_*_list_changed callbacks to Peer::listen ([#1402](https://github.com/modelcontextprotocol/rust-sdk/pull/1402))
+- add Voltip to built with rmcp list ([#1401](https://github.com/modelcontextprotocol/rust-sdk/pull/1401))
+
 ## [3.8.0](https://github.com/modelcontextprotocol/rust-sdk/compare/rmcp-v3.7.0...rmcp-v3.8.0) - 2026-10-23
 
 ### Added
